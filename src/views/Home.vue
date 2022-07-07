@@ -1,19 +1,18 @@
 <template>
-    <div class="home">
-        <div class="grid grid-cols-2 mx-6 mt-6">
-            <img src="../assets/car.jpg" alt="" class=" rounded">
-            <header class="pl-6 flex flex-col justify-around">
-                <div class="">
-                    <h2 class="uppercase font-extrabold text-5xl text-gray-700">get the car of your dreams today</h2>
-                    <h3 class="uppercase font-semibold text-3xl text-gray-500">sign up today and get exclusive deals your
-                        way
-                    </h3>
-                </div>
-                <div class="font-bold text-lg">
-                    <button class="rounded py-2 px-4 uppercase bg-gray-800 text-white mr-4 hover:bg-gray-600">sign-up</button>
-                    <button class="rounded py-2 px-4 text-gray-700 mr-4 uppercase border hover:bg-gray-200">explore</button>
-                </div>
-            </header>
-        </div>
-    </div>
+<div class="my-10">
+    <h2 class="md:text-5xl text-3xl max-w-2xl text-center font-bold mx-auto text-gray-800">Why does my business
+        need
+        a website?
+    </h2>
+    <Muckup class="mx-4 mt-4 md:mx-10 mt:6"/>
+</div>
+
+    <section class="bg-gray-100 font-medium text-gray-500  p-4">
+        <article class="mx-auto max-w-2xl">
+            Imagine Mr. Greg runs a furniture store
+        </article>        
+    </section>
 </template>
+<script setup>
+import Muckup from "../components/Muckup.vue";
+</script>

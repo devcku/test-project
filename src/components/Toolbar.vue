@@ -1,12 +1,13 @@
 <template>
     <nav class="flex p-2 bg-slate-50  justify-between content-center">
-        <input type="text" placeholder="Search..."
-            class="outline-gray-400 p-2 w-2/5 rounded bg-gray-200 placeholder:text-gray-400">
+        <router-link to="/">
+            <h1 class="font-bold text-gray-800 ml-2 my-2 text-lg hover:text-gray-700 cursor-pointer">Team 7</h1>
+        </router-link>
         <div class="flex capitalize font-semibold">
-            <router-link v-for="link in links" :key="link" class="link" :to="'/' + link">
+            <router-link v-for="link in links" :key="link" class="link hidden md:block" :to="'/' + link">
                 {{ link }}
             </router-link>
-            <div class="border-l-2 mx-1"></div>
+            <div class="border-l-2 mx-1 hidden md:block"></div>
             <router-link to="/login" class="link p-2 rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
