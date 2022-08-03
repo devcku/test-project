@@ -9,4 +9,5 @@
     .router-link-exact-active{
         @apply font-bold text-gray-600
     }
+    
 }

@@ -39,7 +39,7 @@ export default {
         return {
             links: [
                 'home',
-                'about',
+                'blog',
                 'contact',
             ]
         }

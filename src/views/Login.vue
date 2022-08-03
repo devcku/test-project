@@ -5,15 +5,15 @@
                 Email
             </label>
             <input name="email" type="text"
-                class="bg-gray-200 w-full mb-2 p-2 rounded placeholder:text-gray-500 text-gray-800 outline-gray-400 "
+                class="bg-gray-100 w-full mb-2 p-2 rounded placeholder:text-gray-500 text-gray-800 outline-gray-400 "
                 placeholder="Example@email.com">
             <label for="email" class="font-medium text-gray-800 ml-1 mb-1">
                 Password
             </label>
             <input name="email" type="text"
-                class="bg-gray-200 w-full mb-2 p-2 rounded placeholder:text-gray-500 text-gray-800 outline-gray-400 "
+                class="bg-gray-100 w-full mb-2 p-2 rounded placeholder:text-gray-500 text-gray-800 outline-gray-400 "
                 placeholder="********">
-            <div class="flex justify-center">
+            <div class="flex justify-start">
                 <button
                     class="py-2 px-4 mx-1 mt-4 w-1/2 transition-all duration-200 bg-gray-900 hover:bg-gray-800 text-gray-50 rounded uppercase ">login</button>
             </div>

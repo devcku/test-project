@@ -1,0 +1,52 @@
+<template>
+    <nav class="col-span-2 row-span-5 bg-black text-slate-300 p-6">
+        <ul class="font-semibold">
+            <router-link tag='li' :to="link.to" v-for="link in links"
+                class="mb-4 hover:text-slate-50 cursor-pointer flex items-center">
+                <component :is="link.icon" class="h-7 w-7 mr-3"></component>
+                <div>{{ link.title }}</div>
+            </router-link>
+        </ul>
+        <ul class="font-semibold pt-8">
+            <li v-for="(action, i) in actions">
+                <router-link :to="action.to" class="mb-4 hover:text-slate-50 cursor-pointer flex items-center">
+                    <div class="h-7 w-7 mr-3 rounded-sm flex items-center justify-center"
+                        :class="i < 2 ? i < 1 ? 'bg-slate-500' : 'bg-blue-500' : 'bg-emerald-500'">
+
+                        <component :is="action.icon" class="h-5 w-5"></component>
+                    </div>
+                    <div>{{ action.title }}</div>
+                </router-link>
+            </li>
+        </ul>
+        <hr class="border-slate-300/25">
+        <ul class="font-semibold pt-4">
+            <li v-for="playlist in playlists">
+                <router-link :to="playlist.to"
+                    class="mb-2 text-sm text-slate-300/75 hover:text-slate-100 cursor-pointer flex items-center">
+
+                    <div>{{ playlist.title }}</div>
+                </router-link>
+            </li>
+        </ul>
+    </nav>
+</template>
+<script setup>
+import { useStore } from 'vuex';
+import { HomeIcon, SearchIcon, CollectionIcon, PlusIcon, HeartIcon, BookmarkIcon } from '@heroicons/vue/solid'
+import { computed } from 'vue';
+
+const store = useStore();
+
+const links = [
+    { title: 'Home', icon: HomeIcon, to: '/' },
+    { title: 'Search', icon: SearchIcon, to: '/' },
+    { title: 'Your Library', icon: CollectionIcon, to: '/' }
+]
+const actions = [
+    { title: 'Create Playlist', icon: PlusIcon, to: '/', color: 'bg-slate-700' },
+    { title: 'Liked Songs', icon: HeartIcon, to: '/', color: 'bg-blue-700' },
+    { title: 'Your Episodes', icon: BookmarkIcon, to: '/', color: 'bg-green-700' }
+]
+const playlists = computed(() => store.getters.playlists)
+</script>
