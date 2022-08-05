@@ -1,16 +1,18 @@
 <template>
     <div class="row-span-1 col-span-12 bg-zinc-800 p-2">
         <div class="flex h-full justify-between items-center relative">
+
             <!-- div 1 -->
-            <div class="cursor-pointer flex rounded-md items-center">
-                <img src="../../assets/img6.jpg" class=" col-span-4 aspect-square bg-cover h-20 object-cover rounded-sm"
-                    alt="">
+            <div class="flex rounded-md items-center z-10">
+                <img src="../../assets/img6.jpg"
+                    class="cursor-pointer col-span-4 aspect-square bg-cover h-20 object-cover rounded-sm" alt="">
                 <div class="ml-4 text-zinc-100 font-semibold">
-                    <span>For you</span>
+                    <span class="cursor-pointer">For you</span>
                     <br>
-                    <span class="text-zinc-400 text-xs">Trevor Daniels</span>
+                    <span class="text-zinc-400 text-xs cursor-pointer">Trevor Daniels</span>
                 </div>
             </div>
+
             <!-- div 2 -->
             <div class="flex flex-col absolute justify-evenly h-full w-full">
                 <div class="flex justify-center items-center">
@@ -32,7 +34,7 @@
             </div>
 
             <!-- div 3 -->
-            <div class="flex text-zinc-500 mr-4">
+            <div class="flex text-zinc-500 mr-4 z-10">
                 <component v-for="icon in sideIcons" :is="icon" class="h-6 w-6 mx-2 cursor-pointer hover:text-zinc-300">
                 </component>
             </div>
