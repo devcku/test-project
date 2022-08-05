@@ -7,7 +7,7 @@ import Player from './components/app/Player.vue';
   <Suspense>
     <template #default>
       <div class="grid grid-cols-12 grid-rows-6 h-[100vh]">
-        <LeftNav :playlists="playlists"></LeftNav>
+        <LeftNav></LeftNav>
         <RouterView class=" col-span-12 sm:col-span-9 row-span-5"></RouterView>
         <Player></Player>
       </div>

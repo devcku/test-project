@@ -2,7 +2,7 @@
     <div class="grid grid-cols-2 grid-rows-2 sm:block h-full w-full sm:h-auto sm:w-auto">
         <!-- div 1 -->
         <div class="flex mx-2 sm:mx-0 rounded-md items-center col-span-2 z-10">
-            <img src="../../../assets/img6.jpg"
+            <img src="../../../assets/img/songs/img6.jpg"
                 class="cursor-pointer col-span-4 aspect-square bg-cover h-10 sm:h-20 object-cover rounded-sm" alt="">
             <div class="ml-4 text-zinc-100 font-semibold">
                 <span class="cursor-pointer">For you</span>

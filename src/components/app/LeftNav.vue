@@ -33,9 +33,9 @@
     </nav>
 </template>
 <script setup>
+import { computed } from 'vue';
 import { useStore } from 'vuex';
 import { HomeIcon, SearchIcon, CollectionIcon, PlusIcon, HeartIcon, BookmarkIcon } from '@heroicons/vue/solid'
-import { computed } from 'vue';
 
 const store = useStore();
 
@@ -45,9 +45,9 @@ const links = [
     { title: 'Your Library', icon: CollectionIcon, to: '/' }
 ]
 const actions = [
-    { title: 'Create Playlist', icon: PlusIcon, to: '/', color: 'bg-slate-700' },
-    { title: 'Liked Songs', icon: HeartIcon, to: '/', color: 'bg-blue-700' },
-    { title: 'Your Episodes', icon: BookmarkIcon, to: '/', color: 'bg-green-700' }
+    { title: 'Create Playlist', icon: PlusIcon, to: '/', },
+    { title: 'Liked Songs', icon: HeartIcon, to: '/', },
+    { title: 'Your Episodes', icon: BookmarkIcon, to: '/', }
 ]
 const playlists = computed(() => store.getters.playlists)
 </script>

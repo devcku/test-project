@@ -6,8 +6,12 @@
 </template>
 <script setup>
 import { ViewListIcon, VolumeUpIcon, ArrowsExpandIcon, DesktopComputerIcon, } from '@heroicons/vue/solid'
+import { computed } from 'vue';
+import { useStore } from 'vuex';
 
+const store = useStore();
 const sideIcons = [
     ViewListIcon, DesktopComputerIcon, VolumeUpIcon, ArrowsExpandIcon
 ]
+
 </script>
