@@ -6,16 +6,14 @@
 
 
     *::-webkit-scrollbar {
-        width: 20px;
-        height: 20px;
+        @apply w-1 sm:w-4;
     }
 
     *::-webkit-scrollbar-track {
-        @apply bg-zinc-600/50;
+        @apply bg-transparent;
     }
     
     *::-webkit-scrollbar-thumb {
-        border-radius: 3px;
-        @apply bg-zinc-600/75;
+        @apply bg-zinc-600/75 rounded-sm;
     }
 }

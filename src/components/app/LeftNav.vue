@@ -1,7 +1,7 @@
 <template>
-    <nav class="col-span-2 row-span-5 bg-black text-slate-300 p-6">
+    <nav class="hidden sm:block col-span-3 row-span-5 bg-black text-slate-300 p-6">
         <ul class="font-semibold">
-            <router-link tag='li' :to="link.to" v-for="link in links"
+            <router-link :to="link.to" v-for="link in links"
                 class="mb-4 hover:text-slate-50 cursor-pointer flex items-center">
                 <component :is="link.icon" class="h-7 w-7 mr-3"></component>
                 <div>{{ link.title }}</div>
@@ -19,8 +19,9 @@
                 </router-link>
             </li>
         </ul>
-        <hr class="border-slate-300/25">
-        <ul class="font-semibold pt-4">
+        <hr class="border-slate-300/25 mb-4">
+        <ul class="font-semibold overflow-y-scroll h-[25%]
+        ">
             <li v-for="playlist in playlists">
                 <router-link :to="playlist.to"
                     class="mb-2 text-sm text-slate-300/75 hover:text-slate-100 cursor-pointer flex items-center">

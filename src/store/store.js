@@ -5,8 +5,8 @@ const store = createStore({
         return {
             lists: [
                 { to: '/', title: 'Twin Impact' },
-                { to: '/', title: 'yeat' },
-                { to: '/', title: 'naija top ten' },
+                { to: '/', title: 'Random Vibes' },
+                { to: '/', title: 'Naija top 10' },
                 { to: '/', title: 'Lofi Bops' },
                 { to: '/', title: '86 Soundtracks' },
                 { to: '/', title: 'UK drill' }
