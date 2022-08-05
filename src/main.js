@@ -7,4 +7,4 @@ import store from './store/store';
 import './index.css'
 
 
-createApp(App).use(router).use(store).mixin(VueScreenSizeMixin).mount('#app')
+createApp(App).use(router).use(store).mount('#app')
