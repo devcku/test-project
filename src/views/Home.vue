@@ -24,7 +24,7 @@
             </header>
 
             <!-- cards -->
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
                 <div class="bg-zinc-700/25 hover:bg-zinc-700/75 shadow-sm cursor-pointer p-4 rounded-md"
                     v-for="playlist in backin">
                     <img :src="playlist.img"

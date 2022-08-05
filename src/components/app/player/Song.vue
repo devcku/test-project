@@ -9,7 +9,7 @@
                 <br>
                 <span class="text-zinc-400 text-xs cursor-pointer">Trevor Daniels</span>
             </div>
-            <PlayIcon class="h-10 w-10 ml-auto text-zinc-200"></PlayIcon>
+            <PlayIcon class="h-10 w-10 ml-auto sm:hidden text-zinc-200"></PlayIcon>
         </div>
 
         <!-- div 2 -->
