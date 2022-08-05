@@ -4,7 +4,7 @@ const store = createStore({
     state() {
         return {
             lists: [
-                { to: '/', title: 'Rave and roses' },
+                { to: '/', title: 'Twin Impact' },
                 { to: '/', title: 'yeat' },
                 { to: '/', title: 'naija top ten' },
                 { to: '/', title: 'Lofi Bops' },

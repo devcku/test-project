@@ -1,8 +1,7 @@
 <script setup>
-import RightNav from './components/Home/RightNav.vue';
-import LeftNav from './components/Home/LeftNav.vue';
-import Player from './components/Home/Player.vue';
-
+import RightNav from './components/app/RightNav.vue';
+import LeftNav from './components/app/LeftNav.vue';
+import Player from './components/app/Player.vue';
 </script>
 
 <template>
@@ -14,6 +13,3 @@ import Player from './components/Home/Player.vue';
     <Player></Player>
   </div>
 </template>
-
-<style>
-</style>
