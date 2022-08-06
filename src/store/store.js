@@ -17,7 +17,7 @@ const store = createStore({
             presongs: [
                 { to: '/', title: 'Jo', artist: 0, src: 'jo' },
                 { to: '/', title: 'Nice and Good', artist: 2, src: 'niceandgood' },
-                { to: '/', title: 'Part girl', artist: 4, src: 'parygirl' },
+                { to: '/', title: 'Part girl', artist: 4, src: 'partygirl' },
                 { to: '/', title: 'Atlantis', artist: 1, src: 'seafret' },
                 { to: '/', title: 'This Side of Paradise', artist: 3, src: 'thissideofparadise' },
                 { to: '/', title: 'Oroma Baby', artist: 0, src: 'oroma' }
