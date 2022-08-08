@@ -18,7 +18,7 @@
                 </div>
             </div>
         </header>
-        <div class="bg-gradient-to-b h-full from-zinc-900/50 to-zinc-900 sm:p-12 p-4">
+        <div class="bg-gradient-to-b from-zinc-900/50 to-zinc-900 sm:p-12 p-4">
             <!-- play button and search -->
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
