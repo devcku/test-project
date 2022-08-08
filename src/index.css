@@ -19,6 +19,9 @@
     input[type='range']::-webkit-slider-thumb {
         @apply bg-zinc-600/75;
     }
+    .hidexs{
+        @apply hidden sm:block;
+    }
 }
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;

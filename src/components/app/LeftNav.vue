@@ -46,8 +46,8 @@ const links = [
 ]
 const actions = [
     { title: 'Create Playlist', icon: PlusIcon, to: '/', },
-    { title: 'Liked Songs', icon: HeartIcon, to: '/', },
+    { title: 'Liked Songs', icon: HeartIcon, to: '/playlists/liked', },
     { title: 'Your Episodes', icon: BookmarkIcon, to: '/', }
 ]
-const playlists = computed(() => store.getters.playlists)
+const playlists = computed(() => store.state.playlists)
 </script>

@@ -7,7 +7,7 @@ import Login from "./views/Login.vue";
 const routes = [
   { path: "/", redirect: "/home" },
   { path: "/home", component: Home },
-  { path: "/list", component: List },
+  { path: "/playlists/:id", component: List },
   { path: "/login", component: Login },
 ];
 const router = createRouter({

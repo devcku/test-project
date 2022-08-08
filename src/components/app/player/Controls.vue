@@ -26,18 +26,20 @@ import { ChevronDoubleLeftIcon, ChevronDoubleRightIcon, PlayIcon, PauseIcon, Swi
 import { useStore } from 'vuex';
 const store = useStore();
 const input = ref(null)
-let songindex = 0;
-const songs = computed(() => store.getters.songs)
-const audio = new Audio(songs.value[songindex].src);
+
+const startup = () => store.commit('startup');
+startup()
+
+let activesong = computed(() => store.state.activesong).value
+let audio = new Audio(activesong.src);
 const paused = ref(true)
 const duration = ref()
 const currentTime = ref()
 
-audio.autoplay = true;
+// audio.autoplay = true;
 audio.onloadeddata = (e) => {
     duration.value = audio.duration
     currentTime.value = audio.currentTime
-    console.log(currentTime.value, duration.value)
 }
 audio.onplay = (e) => {
     paused.value = false
@@ -54,13 +56,15 @@ audio.onended = (e) => {
 }
 
 const next = () => {
-    songindex++;
-    audio.src = songs.value[songindex].src;
+    store.commit('next')
+    activesong = computed(() => store.state.activesong).value
+    audio.src = activesong.src;
     audio.load()
 }
 const prev = () => {
-    songindex--;
-    audio.src = songs.value[songindex].src;
+    store.commit('prev')
+    activesong = computed(() => store.state.activesong).value
+    audio.src = activesong.src;
     audio.load()
 }
 const TogglePlay = () => {
