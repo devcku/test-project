@@ -51,7 +51,7 @@
                 <div class="col-span-1 hidden md:block text-sm">
                     <PlayIcon v-if="hover[i]" class="h-8 w-8"></PlayIcon> <span class="pl-2" v-else>{{ i + 1 }}</span>
                 </div>
-                <div class="col-span-10 flex items-center">
+                <div class="col-span-10 sm:col-span-3 flex items-center">
                     <img :src="song.img" class="h-10 w-10 aspect-square bg-cover object-cover rounded-sm" alt="">
                     <div class="ml-2">
                         <span class="text-zinc-200">{{ song.title }}</span>
@@ -61,9 +61,9 @@
                 </div>
                 <div class="col-span-3 hidexs">{{ song.artist }}</div>
                 <div class="col-span-3 hidexs">8/8/22</div>
-                <div class="col-span-2 flex justify-self-end">
+                <div class="col-span-2 flex justify-self-end sm:justify-self-start">
                     <HeartIcon class="h-5 w-5 mr-4 text-emerald-500"></HeartIcon>
-                    <DotsHorizontalIcon class="h-5 w-5"></DotsHorizontalIcon> <span class=" hidexs">{{ times[i]
+                    <DotsHorizontalIcon class="h-5 w-5 sm:hidden"></DotsHorizontalIcon> <span class=" hidexs">{{ times[i]
                     }}</span>
                 </div>
             </div>
