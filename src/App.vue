@@ -1,12 +1,15 @@
 <script setup>
 import LeftNav from './components/app/LeftNav.vue';
 import Player from './components/app/Player.vue';
+
+const height = outerHeight;
+console.log(height)
 </script>
 
 <template>
   <Suspense>
     <template #default>
-      <div class="grid grid-cols-12 grid-rows-6 h-[100vh]">
+      <div class="grid grid-cols-12 grid-rows-6" :style="'height:'+height+'px'">
         <LeftNav></LeftNav>
         <RouterView class=" col-span-12 sm:col-span-9 row-span-5"></RouterView>
         <Player></Player>
