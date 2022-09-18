@@ -3,10 +3,10 @@ import { ref, watch } from 'vue'
 import LeftNav from './components/app/LeftNav.vue';
 import Player from './components/app/Player.vue';
 
-const height = ref(outerHeight);
+const height = ref(innerHeight);
 
 onresize = () => {
-  height.value = outerHeight
+  height.value = innerHeight
 }
 </script>
 

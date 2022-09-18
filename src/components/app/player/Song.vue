@@ -1,7 +1,7 @@
 <template>
-    <div class="grid grid-cols-2 grid-rows-2 sm:block h-full w-full sm:h-auto sm:w-auto">
+    <div class="grid grid-cols-1 grid-rows-2 sm:block h-full w-full sm:h-auto sm:w-auto">
         <!-- div 1 -->
-        <div class="flex mx-2 sm:mx-0 rounded-md items-center col-span-2 z-10">
+        <div class="flex mx-2 sm:mx-0 rounded-md items-center z-10">
             <img :src="src"
                 class="cursor-pointer col-span-4 aspect-square bg-cover h-10 sm:h-20 object-cover rounded-sm" alt="">
             <div class="ml-4 text-zinc-100 font-semibold">
@@ -13,7 +13,7 @@
         </div>
 
         <!-- div 2 -->
-        <div class="col-span-2 grid grid-cols-3 bg-zinc-900 sm:hidden justify-evenly items-center">
+        <div class="grid grid-cols-3 bg-zinc-900 sm:hidden justify-evenly items-center">
             <div v-for="icon in Icons">
                 <center>
                     <router-link :to="icon.to">
@@ -33,7 +33,7 @@ import { watch, ref } from 'vue';
 import { useStore } from 'vuex';
 
 const Icons = [
-    { to:'/', component: HomeIcon }, { to:'/', component: SearchIcon }, { to:'/', component: CollectionIcon }
+    { to: '/', component: HomeIcon }, { to: '/', component: SearchIcon }, { to: '/', component: CollectionIcon }
 ]
 
 const store = useStore();
