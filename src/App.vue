@@ -1,9 +1,13 @@
 <script setup>
+import { ref, watch } from 'vue'
 import LeftNav from './components/app/LeftNav.vue';
 import Player from './components/app/Player.vue';
 
-const height = outerHeight;
-console.log(height)
+const height = ref(outerHeight);
+
+onresize = () => {
+  height.value = outerHeight
+}
 </script>
 
 <template>
